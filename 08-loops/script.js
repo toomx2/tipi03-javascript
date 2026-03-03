@@ -30,7 +30,7 @@ while (n <= 10) {
     n++; //incremento
 }
 
-//Executa pelo menos 1 vez antes do loop
+//executa pelo menos 1 vez antes do loop
 do {
     console.log(n);
     n++;
