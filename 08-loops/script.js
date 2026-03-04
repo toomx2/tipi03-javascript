@@ -17,7 +17,7 @@ while (y >= 5) {
 let m = 15;
 
 do {
-    console.log(`${m}`);
+    console.log(`${m}`); //com a interpolação, o valor de 'm' vira uma string
     m = m + 2;
 } while (m <= 21);
 
@@ -35,3 +35,60 @@ do {
     console.log(n);
     n++;
 } while (n <= 10);
+
+//break
+let contador = 0;
+
+while (contador < 10) {
+    console.log("Contador: " + contador);
+
+    //Interrompe o loop se o contador for igual a 5
+    if (contador === 5) {
+        break;
+    }
+
+    contador++;
+}
+
+//for
+for (i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+let j = 5;
+
+for (j; j > 2; j--) {
+    console.log(j); /*onde exibirá o último número maior que 2, se for >= (maior ou igual) aí mostraria  2*/
+}
+
+//continue
+for (let k = 1; k <= 7; k++) {
+    //Pula a impressão do número 5
+    if (k === 5) {
+        continue;
+    }
+
+    console.log(k);
+}
+
+//percorrendo um array com loop for
+const listNome = ["João", "Maria", "José"]; //length: é o comprimento dos elemento, se tem 3 então são 3
+
+for (let p = 0; p < listNome.length; p++) {
+    console.log(listNome[p]);
+}
+
+//percorrendo um array com loop forEach - ele passa um por um dentro de listNome
+listNome.forEach(function (nome) {
+    console.log(nome);
+});
+
+//mais moderno - for Each com arrow function: => (função anônima)
+listNome.forEach(nome => {
+    console.log(nome);
+});
+
+//nome e index com forEach
+listNome.forEach((nome, indice) => {
+    console.log(indice, nome);
+});
