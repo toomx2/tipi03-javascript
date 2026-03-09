@@ -92,3 +92,18 @@ listNome.forEach(nome => {
 listNome.forEach((nome, indice) => {
     console.log(indice, nome);
 });
+
+//iterando sobre um array
+const frutasF = ["Morango", "Abacate", "Goiaba"];
+
+for(const cadaFruta of frutasF) {
+    console.log(cadaFruta);
+}
+
+//iterando sobre uma string
+const texto = "Olá mundo!";
+
+for(const letra of texto){
+    console.log(letra);
+}
+
